@@ -9,7 +9,21 @@ To implement  T flipflop using verilog and validating their functionality using 
 Quartus prime
 
 **THEORY**
+T Flip-Flop
+A T (Toggle) Flip-Flop is a type of flip-flop that changes its output state on each clock pulse when the input T is high (1). It is essentially a simplified version of the JK flip-flop where both inputs J and K are tied together to form a single input T.
 
+Operation:
+
+When T = 0, the flip-flop holds its previous state (no change).
+
+When T = 1, the flip-flop toggles its current state (i.e., if the output Q was 0, it becomes 1, and vice versa).
+
+Relation to JK Flip-Flop
+The T flip-flop can be derived from a JK flip-flop by connecting the inputs as J = T and K = T. This reduces the JK flip-flop to two possible input combinations:
+
+J = K = 0 → No change (Hold)
+
+J = K = 1 → Toggle
 **T Flip-Flop**
 
 T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.
